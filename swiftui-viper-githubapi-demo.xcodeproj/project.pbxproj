@@ -185,6 +185,7 @@
 		D60BE84B266A4D3300BAD4BA /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				D61131FA266C9863003576D3 /* Components */,
 				D60BE854266A55E600BAD4BA /* Screens */,
 			);
 			path = UI;
@@ -239,6 +240,13 @@
 				D61131F8266B9F35003576D3 /* DepencencyInjector.swift */,
 			);
 			path = Injected;
+			sourceTree = "<group>";
+		};
+		D61131FA266C9863003576D3 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
