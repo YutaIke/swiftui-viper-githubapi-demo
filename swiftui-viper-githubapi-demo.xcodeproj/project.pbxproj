@@ -1,0 +1,731 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D60BE815266A433800BAD4BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60BE814266A433800BAD4BA /* AppDelegate.swift */; };
+		D60BE817266A433800BAD4BA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60BE816266A433800BAD4BA /* SceneDelegate.swift */; };
+		D60BE819266A433800BAD4BA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60BE818266A433800BAD4BA /* ContentView.swift */; };
+		D60BE81C266A433800BAD4BA /* swiftui_viper_githubapi_demo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D60BE81A266A433800BAD4BA /* swiftui_viper_githubapi_demo.xcdatamodeld */; };
+		D60BE81E266A433B00BAD4BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D60BE81D266A433B00BAD4BA /* Assets.xcassets */; };
+		D60BE821266A433B00BAD4BA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D60BE820266A433B00BAD4BA /* Preview Assets.xcassets */; };
+		D60BE824266A433B00BAD4BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D60BE822266A433B00BAD4BA /* LaunchScreen.storyboard */; };
+		D60BE82F266A433C00BAD4BA /* swiftui_viper_githubapi_demoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60BE82E266A433C00BAD4BA /* swiftui_viper_githubapi_demoTests.swift */; };
+		D60BE83A266A433C00BAD4BA /* swiftui_viper_githubapi_demoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60BE839266A433C00BAD4BA /* swiftui_viper_githubapi_demoUITests.swift */; };
+		D60BE849266A4A3100BAD4BA /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60BE848266A4A3100BAD4BA /* Repository.swift */; };
+		D60BE850266A501300BAD4BA /* RepositoriesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60BE84F266A501300BAD4BA /* RepositoriesInteractor.swift */; };
+		D60BE852266A51A900BAD4BA /* RepositoriesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60BE851266A51A900BAD4BA /* RepositoriesPresenter.swift */; };
+		D60BE856266A560F00BAD4BA /* RepositoriesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60BE855266A560F00BAD4BA /* RepositoriesListView.swift */; };
+		D60BE859266A801300BAD4BA /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60BE858266A801300BAD4BA /* AppState.swift */; };
+		D60BE85B266A863C00BAD4BA /* APICall.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60BE85A266A863C00BAD4BA /* APICall.swift */; };
+		D60BE85D266A876600BAD4BA /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60BE85C266A876600BAD4BA /* APIError.swift */; };
+		D60BE861266A88EE00BAD4BA /* RepositoriesWebAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60BE860266A88EE00BAD4BA /* RepositoriesWebAPI.swift */; };
+		D60BE863266A8E4100BAD4BA /* RepositoriesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60BE862266A8E4100BAD4BA /* RepositoriesResponse.swift */; };
+		D61131F9266B9F35003576D3 /* DepencencyInjector.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61131F8266B9F35003576D3 /* DepencencyInjector.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D60BE82B266A433C00BAD4BA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D60BE809266A433800BAD4BA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D60BE810266A433800BAD4BA;
+			remoteInfo = "swiftui-viper-githubapi-demo";
+		};
+		D60BE836266A433C00BAD4BA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D60BE809266A433800BAD4BA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D60BE810266A433800BAD4BA;
+			remoteInfo = "swiftui-viper-githubapi-demo";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D60BE811266A433800BAD4BA /* swiftui-viper-githubapi-demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swiftui-viper-githubapi-demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D60BE814266A433800BAD4BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D60BE816266A433800BAD4BA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		D60BE818266A433800BAD4BA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D60BE81B266A433800BAD4BA /* swiftui_viper_githubapi_demo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = swiftui_viper_githubapi_demo.xcdatamodel; sourceTree = "<group>"; };
+		D60BE81D266A433B00BAD4BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D60BE820266A433B00BAD4BA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D60BE823266A433B00BAD4BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D60BE825266A433B00BAD4BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D60BE82A266A433C00BAD4BA /* swiftui-viper-githubapi-demoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "swiftui-viper-githubapi-demoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D60BE82E266A433C00BAD4BA /* swiftui_viper_githubapi_demoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftui_viper_githubapi_demoTests.swift; sourceTree = "<group>"; };
+		D60BE830266A433C00BAD4BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D60BE835266A433C00BAD4BA /* swiftui-viper-githubapi-demoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "swiftui-viper-githubapi-demoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D60BE839266A433C00BAD4BA /* swiftui_viper_githubapi_demoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftui_viper_githubapi_demoUITests.swift; sourceTree = "<group>"; };
+		D60BE83B266A433C00BAD4BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D60BE848266A4A3100BAD4BA /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		D60BE84F266A501300BAD4BA /* RepositoriesInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesInteractor.swift; sourceTree = "<group>"; };
+		D60BE851266A51A900BAD4BA /* RepositoriesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesPresenter.swift; sourceTree = "<group>"; };
+		D60BE855266A560F00BAD4BA /* RepositoriesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesListView.swift; sourceTree = "<group>"; };
+		D60BE858266A801300BAD4BA /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		D60BE85A266A863C00BAD4BA /* APICall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICall.swift; sourceTree = "<group>"; };
+		D60BE85C266A876600BAD4BA /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		D60BE860266A88EE00BAD4BA /* RepositoriesWebAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesWebAPI.swift; sourceTree = "<group>"; };
+		D60BE862266A8E4100BAD4BA /* RepositoriesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesResponse.swift; sourceTree = "<group>"; };
+		D61131F8266B9F35003576D3 /* DepencencyInjector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepencencyInjector.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D60BE80E266A433800BAD4BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D60BE827266A433C00BAD4BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D60BE832266A433C00BAD4BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D60BE808266A433800BAD4BA = {
+			isa = PBXGroup;
+			children = (
+				D60BE813266A433800BAD4BA /* swiftui-viper-githubapi-demo */,
+				D60BE82D266A433C00BAD4BA /* swiftui-viper-githubapi-demoTests */,
+				D60BE838266A433C00BAD4BA /* swiftui-viper-githubapi-demoUITests */,
+				D60BE812266A433800BAD4BA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D60BE812266A433800BAD4BA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D60BE811266A433800BAD4BA /* swiftui-viper-githubapi-demo.app */,
+				D60BE82A266A433C00BAD4BA /* swiftui-viper-githubapi-demoTests.xctest */,
+				D60BE835266A433C00BAD4BA /* swiftui-viper-githubapi-demoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D60BE813266A433800BAD4BA /* swiftui-viper-githubapi-demo */ = {
+			isa = PBXGroup;
+			children = (
+				D60BE857266A800600BAD4BA /* Injected */,
+				D60BE853266A55C400BAD4BA /* System */,
+				D60BE84E266A4F8400BAD4BA /* Utilities */,
+				D60BE84D266A4DDC00BAD4BA /* Router */,
+				D60BE84C266A4D9E00BAD4BA /* Presenters */,
+				D60BE84B266A4D3300BAD4BA /* UI */,
+				D60BE84A266A4D2500BAD4BA /* Interactors */,
+				D60BE847266A45BD00BAD4BA /* Entities */,
+				D60BE81D266A433B00BAD4BA /* Assets.xcassets */,
+				D60BE822266A433B00BAD4BA /* LaunchScreen.storyboard */,
+				D60BE825266A433B00BAD4BA /* Info.plist */,
+				D60BE81A266A433800BAD4BA /* swiftui_viper_githubapi_demo.xcdatamodeld */,
+				D60BE81F266A433B00BAD4BA /* Preview Content */,
+				D60BE860266A88EE00BAD4BA /* RepositoriesWebAPI.swift */,
+			);
+			path = "swiftui-viper-githubapi-demo";
+			sourceTree = "<group>";
+		};
+		D60BE81F266A433B00BAD4BA /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				D60BE820266A433B00BAD4BA /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D60BE82D266A433C00BAD4BA /* swiftui-viper-githubapi-demoTests */ = {
+			isa = PBXGroup;
+			children = (
+				D60BE82E266A433C00BAD4BA /* swiftui_viper_githubapi_demoTests.swift */,
+				D60BE830266A433C00BAD4BA /* Info.plist */,
+			);
+			path = "swiftui-viper-githubapi-demoTests";
+			sourceTree = "<group>";
+		};
+		D60BE838266A433C00BAD4BA /* swiftui-viper-githubapi-demoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D60BE839266A433C00BAD4BA /* swiftui_viper_githubapi_demoUITests.swift */,
+				D60BE83B266A433C00BAD4BA /* Info.plist */,
+			);
+			path = "swiftui-viper-githubapi-demoUITests";
+			sourceTree = "<group>";
+		};
+		D60BE847266A45BD00BAD4BA /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				D60BE848266A4A3100BAD4BA /* Repository.swift */,
+				D60BE862266A8E4100BAD4BA /* RepositoriesResponse.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		D60BE84A266A4D2500BAD4BA /* Interactors */ = {
+			isa = PBXGroup;
+			children = (
+				D60BE84F266A501300BAD4BA /* RepositoriesInteractor.swift */,
+			);
+			path = Interactors;
+			sourceTree = "<group>";
+		};
+		D60BE84B266A4D3300BAD4BA /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				D60BE854266A55E600BAD4BA /* Screens */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		D60BE84C266A4D9E00BAD4BA /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				D60BE851266A51A900BAD4BA /* RepositoriesPresenter.swift */,
+			);
+			path = Presenters;
+			sourceTree = "<group>";
+		};
+		D60BE84D266A4DDC00BAD4BA /* Router */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		D60BE84E266A4F8400BAD4BA /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				D60BE85A266A863C00BAD4BA /* APICall.swift */,
+				D60BE85C266A876600BAD4BA /* APIError.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		D60BE853266A55C400BAD4BA /* System */ = {
+			isa = PBXGroup;
+			children = (
+				D60BE814266A433800BAD4BA /* AppDelegate.swift */,
+				D60BE816266A433800BAD4BA /* SceneDelegate.swift */,
+			);
+			path = System;
+			sourceTree = "<group>";
+		};
+		D60BE854266A55E600BAD4BA /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				D60BE818266A433800BAD4BA /* ContentView.swift */,
+				D60BE855266A560F00BAD4BA /* RepositoriesListView.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		D60BE857266A800600BAD4BA /* Injected */ = {
+			isa = PBXGroup;
+			children = (
+				D60BE858266A801300BAD4BA /* AppState.swift */,
+				D61131F8266B9F35003576D3 /* DepencencyInjector.swift */,
+			);
+			path = Injected;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D60BE810266A433800BAD4BA /* swiftui-viper-githubapi-demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D60BE83E266A433C00BAD4BA /* Build configuration list for PBXNativeTarget "swiftui-viper-githubapi-demo" */;
+			buildPhases = (
+				D60BE80D266A433800BAD4BA /* Sources */,
+				D60BE80E266A433800BAD4BA /* Frameworks */,
+				D60BE80F266A433800BAD4BA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "swiftui-viper-githubapi-demo";
+			productName = "swiftui-viper-githubapi-demo";
+			productReference = D60BE811266A433800BAD4BA /* swiftui-viper-githubapi-demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D60BE829266A433C00BAD4BA /* swiftui-viper-githubapi-demoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D60BE841266A433C00BAD4BA /* Build configuration list for PBXNativeTarget "swiftui-viper-githubapi-demoTests" */;
+			buildPhases = (
+				D60BE826266A433C00BAD4BA /* Sources */,
+				D60BE827266A433C00BAD4BA /* Frameworks */,
+				D60BE828266A433C00BAD4BA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D60BE82C266A433C00BAD4BA /* PBXTargetDependency */,
+			);
+			name = "swiftui-viper-githubapi-demoTests";
+			productName = "swiftui-viper-githubapi-demoTests";
+			productReference = D60BE82A266A433C00BAD4BA /* swiftui-viper-githubapi-demoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D60BE834266A433C00BAD4BA /* swiftui-viper-githubapi-demoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D60BE844266A433C00BAD4BA /* Build configuration list for PBXNativeTarget "swiftui-viper-githubapi-demoUITests" */;
+			buildPhases = (
+				D60BE831266A433C00BAD4BA /* Sources */,
+				D60BE832266A433C00BAD4BA /* Frameworks */,
+				D60BE833266A433C00BAD4BA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D60BE837266A433C00BAD4BA /* PBXTargetDependency */,
+			);
+			name = "swiftui-viper-githubapi-demoUITests";
+			productName = "swiftui-viper-githubapi-demoUITests";
+			productReference = D60BE835266A433C00BAD4BA /* swiftui-viper-githubapi-demoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D60BE809266A433800BAD4BA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					D60BE810266A433800BAD4BA = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					D60BE829266A433C00BAD4BA = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = D60BE810266A433800BAD4BA;
+					};
+					D60BE834266A433C00BAD4BA = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = D60BE810266A433800BAD4BA;
+					};
+				};
+			};
+			buildConfigurationList = D60BE80C266A433800BAD4BA /* Build configuration list for PBXProject "swiftui-viper-githubapi-demo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D60BE808266A433800BAD4BA;
+			productRefGroup = D60BE812266A433800BAD4BA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D60BE810266A433800BAD4BA /* swiftui-viper-githubapi-demo */,
+				D60BE829266A433C00BAD4BA /* swiftui-viper-githubapi-demoTests */,
+				D60BE834266A433C00BAD4BA /* swiftui-viper-githubapi-demoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D60BE80F266A433800BAD4BA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D60BE824266A433B00BAD4BA /* LaunchScreen.storyboard in Resources */,
+				D60BE821266A433B00BAD4BA /* Preview Assets.xcassets in Resources */,
+				D60BE81E266A433B00BAD4BA /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D60BE828266A433C00BAD4BA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D60BE833266A433C00BAD4BA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D60BE80D266A433800BAD4BA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D60BE852266A51A900BAD4BA /* RepositoriesPresenter.swift in Sources */,
+				D60BE850266A501300BAD4BA /* RepositoriesInteractor.swift in Sources */,
+				D60BE85B266A863C00BAD4BA /* APICall.swift in Sources */,
+				D61131F9266B9F35003576D3 /* DepencencyInjector.swift in Sources */,
+				D60BE861266A88EE00BAD4BA /* RepositoriesWebAPI.swift in Sources */,
+				D60BE815266A433800BAD4BA /* AppDelegate.swift in Sources */,
+				D60BE859266A801300BAD4BA /* AppState.swift in Sources */,
+				D60BE81C266A433800BAD4BA /* swiftui_viper_githubapi_demo.xcdatamodeld in Sources */,
+				D60BE856266A560F00BAD4BA /* RepositoriesListView.swift in Sources */,
+				D60BE849266A4A3100BAD4BA /* Repository.swift in Sources */,
+				D60BE817266A433800BAD4BA /* SceneDelegate.swift in Sources */,
+				D60BE863266A8E4100BAD4BA /* RepositoriesResponse.swift in Sources */,
+				D60BE819266A433800BAD4BA /* ContentView.swift in Sources */,
+				D60BE85D266A876600BAD4BA /* APIError.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D60BE826266A433C00BAD4BA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D60BE82F266A433C00BAD4BA /* swiftui_viper_githubapi_demoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D60BE831266A433C00BAD4BA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D60BE83A266A433C00BAD4BA /* swiftui_viper_githubapi_demoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D60BE82C266A433C00BAD4BA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D60BE810266A433800BAD4BA /* swiftui-viper-githubapi-demo */;
+			targetProxy = D60BE82B266A433C00BAD4BA /* PBXContainerItemProxy */;
+		};
+		D60BE837266A433C00BAD4BA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D60BE810266A433800BAD4BA /* swiftui-viper-githubapi-demo */;
+			targetProxy = D60BE836266A433C00BAD4BA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D60BE822266A433B00BAD4BA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D60BE823266A433B00BAD4BA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D60BE83C266A433C00BAD4BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D60BE83D266A433C00BAD4BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D60BE83F266A433C00BAD4BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"swiftui-viper-githubapi-demo/Preview Content\"";
+				DEVELOPMENT_TEAM = VP52742XZ8;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "swiftui-viper-githubapi-demo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.test.yutaike.swiftui-viper-githubapi-demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D60BE840266A433C00BAD4BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"swiftui-viper-githubapi-demo/Preview Content\"";
+				DEVELOPMENT_TEAM = VP52742XZ8;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "swiftui-viper-githubapi-demo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.test.yutaike.swiftui-viper-githubapi-demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D60BE842266A433C00BAD4BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VP52742XZ8;
+				INFOPLIST_FILE = "swiftui-viper-githubapi-demoTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.test.yutaike.swiftui-viper-githubapi-demoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/swiftui-viper-githubapi-demo.app/swiftui-viper-githubapi-demo";
+			};
+			name = Debug;
+		};
+		D60BE843266A433C00BAD4BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VP52742XZ8;
+				INFOPLIST_FILE = "swiftui-viper-githubapi-demoTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.test.yutaike.swiftui-viper-githubapi-demoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/swiftui-viper-githubapi-demo.app/swiftui-viper-githubapi-demo";
+			};
+			name = Release;
+		};
+		D60BE845266A433C00BAD4BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VP52742XZ8;
+				INFOPLIST_FILE = "swiftui-viper-githubapi-demoUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.test.yutaike.swiftui-viper-githubapi-demoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "swiftui-viper-githubapi-demo";
+			};
+			name = Debug;
+		};
+		D60BE846266A433C00BAD4BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VP52742XZ8;
+				INFOPLIST_FILE = "swiftui-viper-githubapi-demoUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.test.yutaike.swiftui-viper-githubapi-demoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "swiftui-viper-githubapi-demo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D60BE80C266A433800BAD4BA /* Build configuration list for PBXProject "swiftui-viper-githubapi-demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D60BE83C266A433C00BAD4BA /* Debug */,
+				D60BE83D266A433C00BAD4BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D60BE83E266A433C00BAD4BA /* Build configuration list for PBXNativeTarget "swiftui-viper-githubapi-demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D60BE83F266A433C00BAD4BA /* Debug */,
+				D60BE840266A433C00BAD4BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D60BE841266A433C00BAD4BA /* Build configuration list for PBXNativeTarget "swiftui-viper-githubapi-demoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D60BE842266A433C00BAD4BA /* Debug */,
+				D60BE843266A433C00BAD4BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D60BE844266A433C00BAD4BA /* Build configuration list for PBXNativeTarget "swiftui-viper-githubapi-demoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D60BE845266A433C00BAD4BA /* Debug */,
+				D60BE846266A433C00BAD4BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D60BE81A266A433800BAD4BA /* swiftui_viper_githubapi_demo.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D60BE81B266A433800BAD4BA /* swiftui_viper_githubapi_demo.xcdatamodel */,
+			);
+			currentVersion = D60BE81B266A433800BAD4BA /* swiftui_viper_githubapi_demo.xcdatamodel */;
+			path = swiftui_viper_githubapi_demo.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = D60BE809266A433800BAD4BA /* Project object */;
+}
