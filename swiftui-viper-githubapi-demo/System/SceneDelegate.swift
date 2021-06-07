@@ -35,8 +35,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let session = URLSession(configuration: configuration)
         let webAPI = RealRepositoriesWebAPI(session: session)
         
-        let interactor = RealRepositoriesInteractor(webAPI: webAPI, appState: appState)
-        let presenter = RealRepositoriesPresenter(repositoriesInteractor: interactor)
+        let interactor = RealRepositoriesInteractor(webAPI: webAPI)
+        let presenter = RealRepositoriesPresenter(appState: appState, repositoriesInteractor: interactor)
         
         let contentView = ContentView(appState: appState, presenter: presenter)
             .environment(\.managedObjectContext, context)

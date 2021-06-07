@@ -9,7 +9,7 @@ import Foundation
 import Combine
 
 protocol RepositoriesWebAPI {
-    func loadRepositories(query: String?) -> AnyPublisher<RepositoriesResponse, Error>
+    func loadRepositories(query: String?) -> AnyPublisher<RepositoriesResponse, APIError>
 }
 
 struct RealRepositoriesWebAPI: RepositoriesWebAPI {
@@ -23,7 +23,7 @@ struct RealRepositoriesWebAPI: RepositoriesWebAPI {
         self.baseURL = baseURL
     }
     
-    func loadRepositories(query: String? = nil) -> AnyPublisher<RepositoriesResponse, Error> {
+    func loadRepositories(query: String? = nil) -> AnyPublisher<RepositoriesResponse, APIError> {
         let api = RealRepositoriesWebAPI.API.searchRepositories
         let queryItems:[URLQueryItem] = [.init(name: "q", value: query),
                                          .init(name: "order", value: "desc")]
@@ -44,7 +44,7 @@ struct RealRepositoriesWebAPI: RepositoriesWebAPI {
                 .receive(on: RunLoop.main)
                 .eraseToAnyPublisher()
         } catch let error {
-            return Fail<RepositoriesResponse, Error>(error: error).eraseToAnyPublisher()
+            return Fail<RepositoriesResponse, APIError>(error: error as! APIError).eraseToAnyPublisher()
         }
     }
 

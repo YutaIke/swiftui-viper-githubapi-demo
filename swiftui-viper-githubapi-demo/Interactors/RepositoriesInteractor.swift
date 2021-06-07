@@ -9,41 +9,39 @@ import Foundation
 import Combine
 
 protocol RepositoriesInteractor {
-    func loadRepositories(query: String?)
+    func loadRepositories(query: String?) -> AnyPublisher<AppState.RepositoriesListView.LoadableState<[Repository]>, APIError>
 }
 
 final class RealRepositoriesInteractor: RepositoriesInteractor {
     
     let webAPI: RepositoriesWebAPI
-    let appState: AppState
-    private var cancellables: [AnyCancellable] = []
 
-    init(webAPI: RepositoriesWebAPI, appState: AppState) {
+    init(webAPI: RepositoriesWebAPI) {
         self.webAPI = webAPI
-        self.appState = appState
     }
     
-    func loadRepositories(query: String?) {
-        appState.repositoriesListView.repositories = .isLoading
-        let responseSubscriber = webAPI.loadRepositories(query: query)
-            .sink(receiveCompletion: { completion in
-                switch completion {
-                case let .failure(error):
-                    self.appState.repositoriesListView.repositories = .failed(error)
-                default:
-                    print("default")
-                }
-            }, receiveValue: { repositories in
-                self.appState.repositoriesListView.repositories = .loaded(repositories.items)
-                print(repositories.items)
-            })
-        
-        cancellables += [responseSubscriber]
+    func loadRepositories(query: String?) -> AnyPublisher<AppState.RepositoriesListView.LoadableState<[Repository]>, APIError> {
+        return webAPI.loadRepositories(query: query)
+            .map { repositoriesResponse in .loaded(repositoriesResponse.items) }
+            .eraseToAnyPublisher()
     }
 }
 
 struct StubCountriesInteractor: RepositoriesInteractor {
-    func loadRepositories(query: String?) {
-        
+    func loadRepositories(query: String?) -> AnyPublisher<AppState.RepositoriesListView.LoadableState<[Repository]>, APIError> {
+        let repository = Repository(id: 11111,
+                                    name: "Repository Name",
+                                    htmlUrl: "https://google.com",
+                                    description: "Repository description",
+                                    stargazersCount: 22222,
+                                    language: "Japanese",
+                                    owner: Repository.Owner(id: 111,
+                                                            avatarUrl: "")
+        )
+        let loadableRepository: AppState.RepositoriesListView.LoadableState<[Repository]> = .loaded([repository])
+        return Future<AppState.RepositoriesListView.LoadableState<[Repository]>, APIError> { promise in
+            promise(.success(loadableRepository))
+        }
+        .eraseToAnyPublisher()
     }
 }

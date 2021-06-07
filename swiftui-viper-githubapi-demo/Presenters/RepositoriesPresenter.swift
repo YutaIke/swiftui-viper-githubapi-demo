@@ -12,18 +12,31 @@ protocol RepositoriesPresenter {
     func reloadRepositories(query: String?)
 }
 
-class RealRepositoriesPresenter: RepositoriesPresenter, ObservableObject {
+class RealRepositoriesPresenter: RepositoriesPresenter {
+    private let appState: AppState
     private let repositoriesInteractor: RepositoriesInteractor
-
-    @Published var repositories: [Repository] = []
-    private var cancellables = Set<AnyCancellable>()
+    private var cancellables: [AnyCancellable] = []
     
-    init(repositoriesInteractor: RepositoriesInteractor) {
+    init(appState: AppState, repositoriesInteractor: RepositoriesInteractor) {
+        self.appState = appState
         self.repositoriesInteractor = repositoriesInteractor
     }
     
     func reloadRepositories(query: String?) {
-        repositoriesInteractor.loadRepositories(query: query)
+        appState.repositoriesListView.repositories = .isLoading
+        let repositorySubscriber = repositoriesInteractor.loadRepositories(query: query)
+            .sink(receiveCompletion: { completion in
+                switch completion {
+                case let .failure(error):
+                    self.appState.repositoriesListView.repositories = .failed(error)
+                default:
+                    print("default")
+                }
+            }, receiveValue: { repositories in
+                self.appState.repositoriesListView.repositories = repositories
+            })
+
+        cancellables += [repositorySubscriber]
     }
 }
 
