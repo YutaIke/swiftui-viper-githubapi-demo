@@ -26,6 +26,8 @@
 		D60BE861266A88EE00BAD4BA /* RepositoriesWebAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60BE860266A88EE00BAD4BA /* RepositoriesWebAPI.swift */; };
 		D60BE863266A8E4100BAD4BA /* RepositoriesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60BE862266A8E4100BAD4BA /* RepositoriesResponse.swift */; };
 		D61131F9266B9F35003576D3 /* DepencencyInjector.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61131F8266B9F35003576D3 /* DepencencyInjector.swift */; };
+		D61131FD266E070C003576D3 /* RepositoriesPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61131FC266E070C003576D3 /* RepositoriesPresenterTest.swift */; };
+		D6113200266E0EA1003576D3 /* MockRepositoriesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61131FF266E0EA1003576D3 /* MockRepositoriesInteractor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +73,8 @@
 		D60BE860266A88EE00BAD4BA /* RepositoriesWebAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesWebAPI.swift; sourceTree = "<group>"; };
 		D60BE862266A8E4100BAD4BA /* RepositoriesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesResponse.swift; sourceTree = "<group>"; };
 		D61131F8266B9F35003576D3 /* DepencencyInjector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepencencyInjector.swift; sourceTree = "<group>"; };
+		D61131FC266E070C003576D3 /* RepositoriesPresenterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesPresenterTest.swift; sourceTree = "<group>"; };
+		D61131FF266E0EA1003576D3 /* MockRepositoriesInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockRepositoriesInteractor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +154,8 @@
 		D60BE82D266A433C00BAD4BA /* swiftui-viper-githubapi-demoTests */ = {
 			isa = PBXGroup;
 			children = (
+				D61131FE266E0E8F003576D3 /* Mocks */,
+				D61131FB266E06F1003576D3 /* Presenters */,
 				D60BE82E266A433C00BAD4BA /* swiftui_viper_githubapi_demoTests.swift */,
 				D60BE830266A433C00BAD4BA /* Info.plist */,
 			);
@@ -247,6 +253,22 @@
 			children = (
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		D61131FB266E06F1003576D3 /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				D61131FC266E070C003576D3 /* RepositoriesPresenterTest.swift */,
+			);
+			path = Presenters;
+			sourceTree = "<group>";
+		};
+		D61131FE266E0E8F003576D3 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				D61131FF266E0EA1003576D3 /* MockRepositoriesInteractor.swift */,
+			);
+			path = Mocks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -400,7 +422,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D61131FD266E070C003576D3 /* RepositoriesPresenterTest.swift in Sources */,
 				D60BE82F266A433C00BAD4BA /* swiftui_viper_githubapi_demoTests.swift in Sources */,
+				D6113200266E0EA1003576D3 /* MockRepositoriesInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
