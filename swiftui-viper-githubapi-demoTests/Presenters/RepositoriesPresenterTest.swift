@@ -35,16 +35,7 @@ class RepositoriesPresenterTest: XCTestCase {
 
         presenter.reloadRepositories(query: "swift")
 
-        let repository = Repository(id: 11111,
-                                    name: "Repository Name",
-                                    htmlUrl: "https://google.com",
-                                    description: "Repository description",
-                                    stargazersCount: 22222,
-                                    language: "Japanese",
-                                    owner: Repository.Owner(id: 111,
-                                                            avatarUrl: "")
-        )
-        let expected: AppState.RepositoriesListView.LoadableState<[Repository]> = .loaded([repository])
+        let expected: AppState.RepositoriesListView.LoadableState<[Repository]> = .loaded(Repository.mockedData)
         XCTAssertEqual(appState.repositoriesListView.repositories, expected)
     }
 
