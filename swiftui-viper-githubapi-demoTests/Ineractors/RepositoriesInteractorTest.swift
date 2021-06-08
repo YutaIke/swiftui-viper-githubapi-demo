@@ -48,6 +48,31 @@ class RepositoriesInteractorTest: XCTestCase {
         
         XCTAssertEqual(repositories, expected)
     }
+    
+    func test_loadRepositories_error_unexpectedResponse() throws {
+        let query = "swift"
+        var expected: APIError!
+        var repositories: APIError!
+
+        webAPI.setStub(response: Result.Publisher(APIError.unexpectedResponse).eraseToAnyPublisher())
+        
+        expected = APIError.unexpectedResponse
+
+        interactor.loadRepositories(query: query)
+            .sink(receiveCompletion: { completion in
+                switch completion {
+                case let .failure(error):
+                    repositories = error
+                default:
+                    XCTFail("response is not error")
+                }
+            }, receiveValue: { _ in
+            })
+            .store(in: &subscriptions)
+        
+        XCTAssertEqual(repositories.errorDescription, expected.errorDescription)
+    }
+
 
     func testPerformanceExample() throws {
         // This is an example of a performance test case.
