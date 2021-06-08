@@ -9,12 +9,17 @@ import Foundation
 import Combine
 @testable import swiftui_viper_githubapi_demo
 
-struct MockRepositoriesWebAPI: RepositoriesWebAPI {
+final class MockRepositoriesWebAPI: RepositoriesWebAPI {
+    var stub: Any?
+
+    func setStub(response: AnyPublisher<RepositoriesResponse, APIError>) {
+        stub = response
+    }
+
     func loadRepositories(query: String?) -> AnyPublisher<RepositoriesResponse, APIError> {
-        let repositoriesResponse = RepositoriesResponse.mockedData
-        return Future<RepositoriesResponse, APIError> { promise in
-            promise(.success(repositoriesResponse))
+        guard let response = stub as? AnyPublisher<RepositoriesResponse, APIError> else {
+            return Empty<RepositoriesResponse, APIError>().eraseToAnyPublisher()
         }
-        .eraseToAnyPublisher()
+        return response
     }
 }
