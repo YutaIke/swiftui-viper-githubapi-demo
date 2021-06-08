@@ -11,7 +11,7 @@ import Combine
 
 class RepositoriesInteractorTest: XCTestCase {
 
-    var webAPI: RepositoriesWebAPI!
+    var webAPI: MockRepositoriesWebAPI!
     var interactor: RepositoriesInteractor!
     var subscriptions = Set<AnyCancellable>()
 
@@ -24,18 +24,14 @@ class RepositoriesInteractorTest: XCTestCase {
         subscriptions = Set<AnyCancellable>()
     }
 
-    func test_loadRepositories() throws {
+    func test_loadRepositories_success() throws {
         let query = "swift"
         var expected: AppState.RepositoriesListView.LoadableState<[Repository]>!
         var repositories: AppState.RepositoriesListView.LoadableState<[Repository]>!
 
-        Future<AppState.RepositoriesListView.LoadableState<[Repository]>, Never> { promise in
-            promise(.success(.loaded(Repository.mockedData)))
-        }
-        .sink { value in
-            expected = value
-        }
-        .store(in: &subscriptions)
+        webAPI.setStub(response: Result.Publisher(RepositoriesResponse.mockedData).eraseToAnyPublisher())
+        
+        expected = AppState.RepositoriesListView.LoadableState.loaded(Repository.mockedData)
 
         interactor.loadRepositories(query: query)
             .sink(receiveCompletion: { completion in
