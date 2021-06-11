@@ -1,0 +1,1195 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		030A530C18D9BD1B716A3FA0AD7CC36F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E81E4C45AE0739BD3E68B41E9EA853C /* Foundation.framework */; };
+		1235AAD6EA37A64074071CFF5B92FA2C /* Pods-swiftui-viper-githubapi-demoTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CC124E72430628DF097E00069F57D96F /* Pods-swiftui-viper-githubapi-demoTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1C7E4B9154B4CCD4E2E20A7873C8ABD6 /* Mockingjay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E4B428C8C921ACED0B147784258A61 /* Mockingjay.swift */; };
+		1ED64B745AF6E5FC003D7B1137ED2370 /* Mockingjay-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C82169CCCC6BBCB00CA33B87A155E6C /* Mockingjay-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		22F267075EB742245798F0669800F8CA /* URITemplate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5ADB4B24B8FFD6C6488923D23D320386 /* URITemplate.framework */; };
+		235EE4AEEDC616E29B3289871BE9367D /* Pods-swiftui-viper-githubapi-demoTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F0F223B5B3063EEF13B6C60617D8856 /* Pods-swiftui-viper-githubapi-demoTests-dummy.m */; };
+		3FCC99235BF1F518778DB9BE71AC94FA /* URITemplate-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 37F0A5950C766684F9C391E81CB3D401 /* URITemplate-dummy.m */; };
+		40E14FB6C55C7C9FB706B71B410868E5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E81E4C45AE0739BD3E68B41E9EA853C /* Foundation.framework */; };
+		601078695EAB2498B63C7F1648BFF7F3 /* XCTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0F2370B572845ED278478764A79277 /* XCTest.swift */; };
+		7584D9E6447049E2A9FB95504DD41DF5 /* MockingjayURLSessionConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = D2918086C113BF13076B9A472675DD40 /* MockingjayURLSessionConfiguration.m */; };
+		772865DC2D164B0FEC0EF742AD288FF3 /* NSURLSessionConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82337892A857E5D989F315D75C500843 /* NSURLSessionConfiguration.swift */; };
+		859DE98E4A3DF8CFEE3FEBEC803D2112 /* Matchers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23821C7084035AC2778CE7098EE254E4 /* Matchers.swift */; };
+		948E0D58DCB1E7A5249CAA41BEFED35B /* Pods-swiftui-viper-githubapi-demo-swiftui-viper-githubapi-demoUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3791DC5693B5256050ADF4AE7E91795A /* Pods-swiftui-viper-githubapi-demo-swiftui-viper-githubapi-demoUITests-dummy.m */; };
+		A1FDEE02E9E4BDFD5F6395E9728DF2B8 /* Builders.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7898D998ED94D2B06041B1150B2456 /* Builders.swift */; };
+		A603DE41248AC559FCF2D9D77F805BDC /* Mockingjay.h in Headers */ = {isa = PBXBuildFile; fileRef = 11021F36058F604E442C5E8055F4F651 /* Mockingjay.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A667CEC22D1CBDD9B94BE515F77B65A4 /* Mockingjay-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 386A3B5560F429A2D417195528A781C7 /* Mockingjay-dummy.m */; };
+		B050AEB3B9FD2C351BABB34CF47D1B2E /* Pods-swiftui-viper-githubapi-demo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F877CB531C1961D74CC840D1A6B5893 /* Pods-swiftui-viper-githubapi-demo-dummy.m */; };
+		B7690F237DA0BC7E642C1804B820143C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E81E4C45AE0739BD3E68B41E9EA853C /* Foundation.framework */; };
+		D0E3DD00CAE9FCE8EE4D2F917E03B702 /* URITemplate-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 315F3633E84E8D3CB7957730718D4356 /* URITemplate-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D48B97AAE997FDCD633150F7AA54FA5C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E81E4C45AE0739BD3E68B41E9EA853C /* Foundation.framework */; };
+		D8CF93DDD751F123FD082AF0B797157D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E81E4C45AE0739BD3E68B41E9EA853C /* Foundation.framework */; };
+		DAF23FEFC6F971629B50865E09DE60E3 /* URITemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA00E1D241DE467B8B7B74B5DDCCD7E /* URITemplate.swift */; };
+		E4FA8179C416D54B86F42DB71C0DB3AD /* Pods-swiftui-viper-githubapi-demo-swiftui-viper-githubapi-demoUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 516EEA52919F5ADAD09189D41B9622B8 /* Pods-swiftui-viper-githubapi-demo-swiftui-viper-githubapi-demoUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E9E09BA9C8A0F5FA7BBC96B2C705C4E1 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89EC0AED7E664A992E020B90648A322A /* XCTest.framework */; };
+		F88667DF3718E2A08246FD0956B049D3 /* Pods-swiftui-viper-githubapi-demo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C1AE1EDA43B9D897B2272A77FB678C9 /* Pods-swiftui-viper-githubapi-demo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F92212F212AFD1B0BCC5D9C00D309E56 /* MockingjayProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED36AD5F4286DAB773A4AF3DBB26A1A /* MockingjayProtocol.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2DD29D479D96B2BFAF2FF695FE1399E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 46A21D5B4F21BF2464D4FF3353BAA8DA;
+			remoteInfo = "Pods-swiftui-viper-githubapi-demo";
+		};
+		38CC40D72D4708722C502A885BB43E75 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A4ED113D38492F631BC6DBF8BB3D1D8E;
+			remoteInfo = URITemplate;
+		};
+		B0E6D6CF314205D6774C5ACF36EB0980 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7996D4D780FF8A38ECB1C58253B87C8F;
+			remoteInfo = Mockingjay;
+		};
+		F1CBD2B6F86D2A45527006D9485C4B2D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A4ED113D38492F631BC6DBF8BB3D1D8E;
+			remoteInfo = URITemplate;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0B808C5AE9CCF690B416053E59A718C4 /* Pods-swiftui-viper-githubapi-demoTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-swiftui-viper-githubapi-demoTests-Info.plist"; sourceTree = "<group>"; };
+		11021F36058F604E442C5E8055F4F651 /* Mockingjay.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Mockingjay.h; path = Sources/Mockingjay/Mockingjay.h; sourceTree = "<group>"; };
+		13313DB6A4D98143DD206291741F1F25 /* Pods-swiftui-viper-githubapi-demo-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-swiftui-viper-githubapi-demo-Info.plist"; sourceTree = "<group>"; };
+		14AFA7F3897AD3BE450031C35A78C927 /* Pods-swiftui-viper-githubapi-demoTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-swiftui-viper-githubapi-demoTests.modulemap"; sourceTree = "<group>"; };
+		15050BC510E832CCF8D7D600EAD99DAD /* URITemplate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = URITemplate.debug.xcconfig; sourceTree = "<group>"; };
+		1AA00E1D241DE467B8B7B74B5DDCCD7E /* URITemplate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = URITemplate.swift; path = Sources/URITemplate.swift; sourceTree = "<group>"; };
+		23821C7084035AC2778CE7098EE254E4 /* Matchers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Matchers.swift; path = Sources/Mockingjay/Matchers.swift; sourceTree = "<group>"; };
+		27D8F689724F75811E8E0FD72AC52576 /* Pods-swiftui-viper-githubapi-demoTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-swiftui-viper-githubapi-demoTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		2C82169CCCC6BBCB00CA33B87A155E6C /* Mockingjay-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Mockingjay-umbrella.h"; sourceTree = "<group>"; };
+		315F3633E84E8D3CB7957730718D4356 /* URITemplate-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "URITemplate-umbrella.h"; sourceTree = "<group>"; };
+		3791DC5693B5256050ADF4AE7E91795A /* Pods-swiftui-viper-githubapi-demo-swiftui-viper-githubapi-demoUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-swiftui-viper-githubapi-demo-swiftui-viper-githubapi-demoUITests-dummy.m"; sourceTree = "<group>"; };
+		37D6665D7DF945A3D33B87621BE18E40 /* Pods-swiftui-viper-githubapi-demoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-swiftui-viper-githubapi-demoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		37F0A5950C766684F9C391E81CB3D401 /* URITemplate-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "URITemplate-dummy.m"; sourceTree = "<group>"; };
+		386A3B5560F429A2D417195528A781C7 /* Mockingjay-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Mockingjay-dummy.m"; sourceTree = "<group>"; };
+		3D24851DF2A7139150ADCA3F485D00DC /* Mockingjay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Mockingjay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		421BE7808332368693AED630CD06CFD9 /* URITemplate-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "URITemplate-Info.plist"; sourceTree = "<group>"; };
+		4555937390A217C5225AAD8632FE5241 /* Mockingjay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Mockingjay.debug.xcconfig; sourceTree = "<group>"; };
+		460DECCB9D901F6EA9907F44F02D9849 /* URITemplate.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = URITemplate.modulemap; sourceTree = "<group>"; };
+		4994B62E6060718FA8E2DC9EC47E0E1C /* Pods-swiftui-viper-githubapi-demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-swiftui-viper-githubapi-demo.debug.xcconfig"; sourceTree = "<group>"; };
+		4C1AE1EDA43B9D897B2272A77FB678C9 /* Pods-swiftui-viper-githubapi-demo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-swiftui-viper-githubapi-demo-umbrella.h"; sourceTree = "<group>"; };
+		4CFC7BB55EACB18E2046264F128D5A3C /* Pods-swiftui-viper-githubapi-demo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-swiftui-viper-githubapi-demo-acknowledgements.plist"; sourceTree = "<group>"; };
+		516EEA52919F5ADAD09189D41B9622B8 /* Pods-swiftui-viper-githubapi-demo-swiftui-viper-githubapi-demoUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-swiftui-viper-githubapi-demo-swiftui-viper-githubapi-demoUITests-umbrella.h"; sourceTree = "<group>"; };
+		52884A02FBC7B86BAFF2C166D3634093 /* Pods-swiftui-viper-githubapi-demo-swiftui-viper-githubapi-demoUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-swiftui-viper-githubapi-demo-swiftui-viper-githubapi-demoUITests.modulemap"; sourceTree = "<group>"; };
+		5864180ADCA91ADD7138B2B975D69CAA /* Pods-swiftui-viper-githubapi-demo-swiftui-viper-githubapi-demoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-swiftui-viper-githubapi-demo-swiftui-viper-githubapi-demoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		59E4B428C8C921ACED0B147784258A61 /* Mockingjay.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Mockingjay.swift; path = Sources/Mockingjay/Mockingjay.swift; sourceTree = "<group>"; };
+		5ADB4B24B8FFD6C6488923D23D320386 /* URITemplate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = URITemplate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D5E32741CDCBBEAFAEFEA54AC4045A9 /* Pods_swiftui_viper_githubapi_demoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_swiftui_viper_githubapi_demoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F877CB531C1961D74CC840D1A6B5893 /* Pods-swiftui-viper-githubapi-demo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-swiftui-viper-githubapi-demo-dummy.m"; sourceTree = "<group>"; };
+		61DC85DA27917B328ABBBC21E903ED2D /* Pods-swiftui-viper-githubapi-demo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-swiftui-viper-githubapi-demo.modulemap"; sourceTree = "<group>"; };
+		6A92D13ACA76A198281BA4FC0F5CBAD0 /* URITemplate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = URITemplate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C25A20DFE8210BCC204BC60865F3F43 /* Mockingjay.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Mockingjay.modulemap; sourceTree = "<group>"; };
+		6DB7ACBF092F2F009EE8A5A64600296B /* URITemplate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = URITemplate.release.xcconfig; sourceTree = "<group>"; };
+		6E81E4C45AE0739BD3E68B41E9EA853C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		6EE881EE155E6742BC9D0276BB3C736A /* Pods-swiftui-viper-githubapi-demoTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-swiftui-viper-githubapi-demoTests-frameworks.sh"; sourceTree = "<group>"; };
+		82337892A857E5D989F315D75C500843 /* NSURLSessionConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NSURLSessionConfiguration.swift; path = Sources/Mockingjay/NSURLSessionConfiguration.swift; sourceTree = "<group>"; };
+		89EC0AED7E664A992E020B90648A322A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		8F0F223B5B3063EEF13B6C60617D8856 /* Pods-swiftui-viper-githubapi-demoTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-swiftui-viper-githubapi-demoTests-dummy.m"; sourceTree = "<group>"; };
+		955F7DB796B7631083876DCBB92A652B /* Pods-swiftui-viper-githubapi-demo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-swiftui-viper-githubapi-demo-acknowledgements.markdown"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9E4F9E41C68210A89831BF60380E5E26 /* Mockingjay-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Mockingjay-prefix.pch"; sourceTree = "<group>"; };
+		A25704EFC405BA8C899210390D5E3184 /* Pods-swiftui-viper-githubapi-demo-swiftui-viper-githubapi-demoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-swiftui-viper-githubapi-demo-swiftui-viper-githubapi-demoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		AA0F2370B572845ED278478764A79277 /* XCTest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = XCTest.swift; path = Sources/Mockingjay/XCTest.swift; sourceTree = "<group>"; };
+		AA59B2C1E0A718A78FA68B751F3B35DF /* Pods-swiftui-viper-githubapi-demoTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-swiftui-viper-githubapi-demoTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		B0D7CBCBD47C240696BAF3C5CED986AF /* Pods-swiftui-viper-githubapi-demo-swiftui-viper-githubapi-demoUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-swiftui-viper-githubapi-demo-swiftui-viper-githubapi-demoUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		BE9333F43CEAD826D834C9019B9B478A /* Pods-swiftui-viper-githubapi-demoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-swiftui-viper-githubapi-demoTests.release.xcconfig"; sourceTree = "<group>"; };
+		BF34BF2BF3F594BD5B41FFEDE42D19E6 /* Pods_swiftui_viper_githubapi_demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_swiftui_viper_githubapi_demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF7898D998ED94D2B06041B1150B2456 /* Builders.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Builders.swift; path = Sources/Mockingjay/Builders.swift; sourceTree = "<group>"; };
+		CC124E72430628DF097E00069F57D96F /* Pods-swiftui-viper-githubapi-demoTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-swiftui-viper-githubapi-demoTests-umbrella.h"; sourceTree = "<group>"; };
+		D2918086C113BF13076B9A472675DD40 /* MockingjayURLSessionConfiguration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MockingjayURLSessionConfiguration.m; path = Sources/Mockingjay/MockingjayURLSessionConfiguration.m; sourceTree = "<group>"; };
+		D4379AAB366BC12CCBBE0BB27BB331C5 /* Mockingjay-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Mockingjay-Info.plist"; sourceTree = "<group>"; };
+		D562D5F3E23001EEEB52CA8EDF42274A /* Pods-swiftui-viper-githubapi-demo-swiftui-viper-githubapi-demoUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-swiftui-viper-githubapi-demo-swiftui-viper-githubapi-demoUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		D66FF955EAC476C03C2B9CCEDD4CA105 /* Pods_swiftui_viper_githubapi_demo_swiftui_viper_githubapi_demoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_swiftui_viper_githubapi_demo_swiftui_viper_githubapi_demoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DED36AD5F4286DAB773A4AF3DBB26A1A /* MockingjayProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MockingjayProtocol.swift; path = Sources/Mockingjay/MockingjayProtocol.swift; sourceTree = "<group>"; };
+		E347CE69C496870456874A9B1219C082 /* Pods-swiftui-viper-githubapi-demo-swiftui-viper-githubapi-demoUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-swiftui-viper-githubapi-demo-swiftui-viper-githubapi-demoUITests-Info.plist"; sourceTree = "<group>"; };
+		F3A9C0CC2C9D095ADB0FC972613E0617 /* Mockingjay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Mockingjay.release.xcconfig; sourceTree = "<group>"; };
+		FBEA10142B5911DEF38A9208E88FDF8B /* Pods-swiftui-viper-githubapi-demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-swiftui-viper-githubapi-demo.release.xcconfig"; sourceTree = "<group>"; };
+		FF729DF9EC716020720D4C8A936B0DA0 /* URITemplate-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "URITemplate-prefix.pch"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2F6915C02DE60C7CE7B421389794D3E3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40E14FB6C55C7C9FB706B71B410868E5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E661ECA86E0176072F17A4A9B4DE2E5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D48B97AAE997FDCD633150F7AA54FA5C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84FD937B97CD4F7DF260EBAF2EDE8DF6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7690F237DA0BC7E642C1804B820143C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8CEFBC4EDE3A5DEC5BBF45FAF0E904F4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				030A530C18D9BD1B716A3FA0AD7CC36F /* Foundation.framework in Frameworks */,
+				22F267075EB742245798F0669800F8CA /* URITemplate.framework in Frameworks */,
+				E9E09BA9C8A0F5FA7BBC96B2C705C4E1 /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD362E0AFFE7544D76B9218000951C77 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8CF93DDD751F123FD082AF0B797157D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		14758E6EC8FC4F89A3F34C580639CCD9 /* Mockingjay */ = {
+			isa = PBXGroup;
+			children = (
+				A9A118E385AF2E1CE4A686D0A98DCB98 /* Core */,
+				695846410D4B6225121DAB5DB4730BDD /* Support Files */,
+				44A491FED3333A17717BCF32C4717DF0 /* XCTest */,
+			);
+			path = Mockingjay;
+			sourceTree = "<group>";
+		};
+		1B3F839A7067FC446CDED02F169E595E /* Pods-swiftui-viper-githubapi-demoTests */ = {
+			isa = PBXGroup;
+			children = (
+				14AFA7F3897AD3BE450031C35A78C927 /* Pods-swiftui-viper-githubapi-demoTests.modulemap */,
+				27D8F689724F75811E8E0FD72AC52576 /* Pods-swiftui-viper-githubapi-demoTests-acknowledgements.markdown */,
+				AA59B2C1E0A718A78FA68B751F3B35DF /* Pods-swiftui-viper-githubapi-demoTests-acknowledgements.plist */,
+				8F0F223B5B3063EEF13B6C60617D8856 /* Pods-swiftui-viper-githubapi-demoTests-dummy.m */,
+				6EE881EE155E6742BC9D0276BB3C736A /* Pods-swiftui-viper-githubapi-demoTests-frameworks.sh */,
+				0B808C5AE9CCF690B416053E59A718C4 /* Pods-swiftui-viper-githubapi-demoTests-Info.plist */,
+				CC124E72430628DF097E00069F57D96F /* Pods-swiftui-viper-githubapi-demoTests-umbrella.h */,
+				37D6665D7DF945A3D33B87621BE18E40 /* Pods-swiftui-viper-githubapi-demoTests.debug.xcconfig */,
+				BE9333F43CEAD826D834C9019B9B478A /* Pods-swiftui-viper-githubapi-demoTests.release.xcconfig */,
+			);
+			name = "Pods-swiftui-viper-githubapi-demoTests";
+			path = "Target Support Files/Pods-swiftui-viper-githubapi-demoTests";
+			sourceTree = "<group>";
+		};
+		22177E62EF4E203128F505DBE6AE0C70 /* URITemplate */ = {
+			isa = PBXGroup;
+			children = (
+				1AA00E1D241DE467B8B7B74B5DDCCD7E /* URITemplate.swift */,
+				569DEB2B4DD9CED084A15B744AE5D5AB /* Support Files */,
+			);
+			path = URITemplate;
+			sourceTree = "<group>";
+		};
+		378C95EC7B407E9A3596FC18DD441AFB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				14758E6EC8FC4F89A3F34C580639CCD9 /* Mockingjay */,
+				22177E62EF4E203128F505DBE6AE0C70 /* URITemplate */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		38C7790F0F22591ADA3B05248EF6DA30 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6E81E4C45AE0739BD3E68B41E9EA853C /* Foundation.framework */,
+				89EC0AED7E664A992E020B90648A322A /* XCTest.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		3BC377BDD19D53B0507E3B269654F952 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3D24851DF2A7139150ADCA3F485D00DC /* Mockingjay.framework */,
+				BF34BF2BF3F594BD5B41FFEDE42D19E6 /* Pods_swiftui_viper_githubapi_demo.framework */,
+				D66FF955EAC476C03C2B9CCEDD4CA105 /* Pods_swiftui_viper_githubapi_demo_swiftui_viper_githubapi_demoUITests.framework */,
+				5D5E32741CDCBBEAFAEFEA54AC4045A9 /* Pods_swiftui_viper_githubapi_demoTests.framework */,
+				6A92D13ACA76A198281BA4FC0F5CBAD0 /* URITemplate.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		44A491FED3333A17717BCF32C4717DF0 /* XCTest */ = {
+			isa = PBXGroup;
+			children = (
+				AA0F2370B572845ED278478764A79277 /* XCTest.swift */,
+			);
+			name = XCTest;
+			sourceTree = "<group>";
+		};
+		4A5C308F9DB452C815B948CB7AFC74F4 /* Pods-swiftui-viper-githubapi-demo-swiftui-viper-githubapi-demoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				52884A02FBC7B86BAFF2C166D3634093 /* Pods-swiftui-viper-githubapi-demo-swiftui-viper-githubapi-demoUITests.modulemap */,
+				B0D7CBCBD47C240696BAF3C5CED986AF /* Pods-swiftui-viper-githubapi-demo-swiftui-viper-githubapi-demoUITests-acknowledgements.markdown */,
+				D562D5F3E23001EEEB52CA8EDF42274A /* Pods-swiftui-viper-githubapi-demo-swiftui-viper-githubapi-demoUITests-acknowledgements.plist */,
+				3791DC5693B5256050ADF4AE7E91795A /* Pods-swiftui-viper-githubapi-demo-swiftui-viper-githubapi-demoUITests-dummy.m */,
+				E347CE69C496870456874A9B1219C082 /* Pods-swiftui-viper-githubapi-demo-swiftui-viper-githubapi-demoUITests-Info.plist */,
+				516EEA52919F5ADAD09189D41B9622B8 /* Pods-swiftui-viper-githubapi-demo-swiftui-viper-githubapi-demoUITests-umbrella.h */,
+				5864180ADCA91ADD7138B2B975D69CAA /* Pods-swiftui-viper-githubapi-demo-swiftui-viper-githubapi-demoUITests.debug.xcconfig */,
+				A25704EFC405BA8C899210390D5E3184 /* Pods-swiftui-viper-githubapi-demo-swiftui-viper-githubapi-demoUITests.release.xcconfig */,
+			);
+			name = "Pods-swiftui-viper-githubapi-demo-swiftui-viper-githubapi-demoUITests";
+			path = "Target Support Files/Pods-swiftui-viper-githubapi-demo-swiftui-viper-githubapi-demoUITests";
+			sourceTree = "<group>";
+		};
+		569DEB2B4DD9CED084A15B744AE5D5AB /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				460DECCB9D901F6EA9907F44F02D9849 /* URITemplate.modulemap */,
+				37F0A5950C766684F9C391E81CB3D401 /* URITemplate-dummy.m */,
+				421BE7808332368693AED630CD06CFD9 /* URITemplate-Info.plist */,
+				FF729DF9EC716020720D4C8A936B0DA0 /* URITemplate-prefix.pch */,
+				315F3633E84E8D3CB7957730718D4356 /* URITemplate-umbrella.h */,
+				15050BC510E832CCF8D7D600EAD99DAD /* URITemplate.debug.xcconfig */,
+				6DB7ACBF092F2F009EE8A5A64600296B /* URITemplate.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/URITemplate";
+			sourceTree = "<group>";
+		};
+		695846410D4B6225121DAB5DB4730BDD /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6C25A20DFE8210BCC204BC60865F3F43 /* Mockingjay.modulemap */,
+				386A3B5560F429A2D417195528A781C7 /* Mockingjay-dummy.m */,
+				D4379AAB366BC12CCBBE0BB27BB331C5 /* Mockingjay-Info.plist */,
+				9E4F9E41C68210A89831BF60380E5E26 /* Mockingjay-prefix.pch */,
+				2C82169CCCC6BBCB00CA33B87A155E6C /* Mockingjay-umbrella.h */,
+				4555937390A217C5225AAD8632FE5241 /* Mockingjay.debug.xcconfig */,
+				F3A9C0CC2C9D095ADB0FC972613E0617 /* Mockingjay.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Mockingjay";
+			sourceTree = "<group>";
+		};
+		6DF384DBD03F7796986FDF6190406F2A /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D64E0665CD42ED4ED344D047D665DF17 /* Pods-swiftui-viper-githubapi-demo */,
+				4A5C308F9DB452C815B948CB7AFC74F4 /* Pods-swiftui-viper-githubapi-demo-swiftui-viper-githubapi-demoUITests */,
+				1B3F839A7067FC446CDED02F169E595E /* Pods-swiftui-viper-githubapi-demoTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		980AE4412EFAAB586FD72DC122B0362B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5ADB4B24B8FFD6C6488923D23D320386 /* URITemplate.framework */,
+				38C7790F0F22591ADA3B05248EF6DA30 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A9A118E385AF2E1CE4A686D0A98DCB98 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				BF7898D998ED94D2B06041B1150B2456 /* Builders.swift */,
+				23821C7084035AC2778CE7098EE254E4 /* Matchers.swift */,
+				11021F36058F604E442C5E8055F4F651 /* Mockingjay.h */,
+				59E4B428C8C921ACED0B147784258A61 /* Mockingjay.swift */,
+				DED36AD5F4286DAB773A4AF3DBB26A1A /* MockingjayProtocol.swift */,
+				D2918086C113BF13076B9A472675DD40 /* MockingjayURLSessionConfiguration.m */,
+				82337892A857E5D989F315D75C500843 /* NSURLSessionConfiguration.swift */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				980AE4412EFAAB586FD72DC122B0362B /* Frameworks */,
+				378C95EC7B407E9A3596FC18DD441AFB /* Pods */,
+				3BC377BDD19D53B0507E3B269654F952 /* Products */,
+				6DF384DBD03F7796986FDF6190406F2A /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D64E0665CD42ED4ED344D047D665DF17 /* Pods-swiftui-viper-githubapi-demo */ = {
+			isa = PBXGroup;
+			children = (
+				61DC85DA27917B328ABBBC21E903ED2D /* Pods-swiftui-viper-githubapi-demo.modulemap */,
+				955F7DB796B7631083876DCBB92A652B /* Pods-swiftui-viper-githubapi-demo-acknowledgements.markdown */,
+				4CFC7BB55EACB18E2046264F128D5A3C /* Pods-swiftui-viper-githubapi-demo-acknowledgements.plist */,
+				5F877CB531C1961D74CC840D1A6B5893 /* Pods-swiftui-viper-githubapi-demo-dummy.m */,
+				13313DB6A4D98143DD206291741F1F25 /* Pods-swiftui-viper-githubapi-demo-Info.plist */,
+				4C1AE1EDA43B9D897B2272A77FB678C9 /* Pods-swiftui-viper-githubapi-demo-umbrella.h */,
+				4994B62E6060718FA8E2DC9EC47E0E1C /* Pods-swiftui-viper-githubapi-demo.debug.xcconfig */,
+				FBEA10142B5911DEF38A9208E88FDF8B /* Pods-swiftui-viper-githubapi-demo.release.xcconfig */,
+			);
+			name = "Pods-swiftui-viper-githubapi-demo";
+			path = "Target Support Files/Pods-swiftui-viper-githubapi-demo";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		3798B3E18C4FEC584434682C92306D48 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1ED64B745AF6E5FC003D7B1137ED2370 /* Mockingjay-umbrella.h in Headers */,
+				A603DE41248AC559FCF2D9D77F805BDC /* Mockingjay.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6516BA0384FE5FE3D8B3C35A0A3EE759 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4FA8179C416D54B86F42DB71C0DB3AD /* Pods-swiftui-viper-githubapi-demo-swiftui-viper-githubapi-demoUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BF3B5C5115C15596FC231F8F768E52B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F88667DF3718E2A08246FD0956B049D3 /* Pods-swiftui-viper-githubapi-demo-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACE981244A853657F3AE66BB99B4A17F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1235AAD6EA37A64074071CFF5B92FA2C /* Pods-swiftui-viper-githubapi-demoTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA31668CB089C1888D2938B97F680B53 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0E3DD00CAE9FCE8EE4D2F917E03B702 /* URITemplate-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		46A21D5B4F21BF2464D4FF3353BAA8DA /* Pods-swiftui-viper-githubapi-demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4691886EF14E62105E5B02D60AC614A9 /* Build configuration list for PBXNativeTarget "Pods-swiftui-viper-githubapi-demo" */;
+			buildPhases = (
+				7BF3B5C5115C15596FC231F8F768E52B /* Headers */,
+				41674B287776F478B944F577F4BF5429 /* Sources */,
+				2F6915C02DE60C7CE7B421389794D3E3 /* Frameworks */,
+				8CEC40C1836307E378D41DD2D793E46F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-swiftui-viper-githubapi-demo";
+			productName = "Pods-swiftui-viper-githubapi-demo";
+			productReference = BF34BF2BF3F594BD5B41FFEDE42D19E6 /* Pods_swiftui_viper_githubapi_demo.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7996D4D780FF8A38ECB1C58253B87C8F /* Mockingjay */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F7485EA3857FD96A9FC9A05A8053C2AB /* Build configuration list for PBXNativeTarget "Mockingjay" */;
+			buildPhases = (
+				3798B3E18C4FEC584434682C92306D48 /* Headers */,
+				E83F0DEA5B4EA08D2D83AA299B83C01D /* Sources */,
+				8CEFBC4EDE3A5DEC5BBF45FAF0E904F4 /* Frameworks */,
+				3D2CB64996A3864C52487A9F729E3761 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F7A34E8105895393E8C31FC109120332 /* PBXTargetDependency */,
+			);
+			name = Mockingjay;
+			productName = Mockingjay;
+			productReference = 3D24851DF2A7139150ADCA3F485D00DC /* Mockingjay.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9BC0AF9CBC39567BD00CE834286DBE1F /* Pods-swiftui-viper-githubapi-demoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C0E0251AC71A5A8449F61B35B936F125 /* Build configuration list for PBXNativeTarget "Pods-swiftui-viper-githubapi-demoTests" */;
+			buildPhases = (
+				ACE981244A853657F3AE66BB99B4A17F /* Headers */,
+				DEFB07CF765AE0419F2318728466575D /* Sources */,
+				DD362E0AFFE7544D76B9218000951C77 /* Frameworks */,
+				ECA1E900EBD6B48245C77E23E15FDA52 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CD9C2656AC86828652CBD3A37711DC1B /* PBXTargetDependency */,
+				A1CFF30D0B61DD88B1CADC04AD4006E5 /* PBXTargetDependency */,
+				E6ED3C48446FBBD02BF78D22729ABCBD /* PBXTargetDependency */,
+			);
+			name = "Pods-swiftui-viper-githubapi-demoTests";
+			productName = "Pods-swiftui-viper-githubapi-demoTests";
+			productReference = 5D5E32741CDCBBEAFAEFEA54AC4045A9 /* Pods_swiftui_viper_githubapi_demoTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A4ED113D38492F631BC6DBF8BB3D1D8E /* URITemplate */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9E3454BCA1DD0F35B54C44BAF6E0754C /* Build configuration list for PBXNativeTarget "URITemplate" */;
+			buildPhases = (
+				BA31668CB089C1888D2938B97F680B53 /* Headers */,
+				D6597C018862AF199FB52E4E1E2C0687 /* Sources */,
+				6E661ECA86E0176072F17A4A9B4DE2E5 /* Frameworks */,
+				2F4DB2F155024AB1CB1A6F9A233A04DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = URITemplate;
+			productName = URITemplate;
+			productReference = 6A92D13ACA76A198281BA4FC0F5CBAD0 /* URITemplate.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		BE18360879BD123BDC5896982CAC2D5A /* Pods-swiftui-viper-githubapi-demo-swiftui-viper-githubapi-demoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6A284720825824196A740A0325B6DF2A /* Build configuration list for PBXNativeTarget "Pods-swiftui-viper-githubapi-demo-swiftui-viper-githubapi-demoUITests" */;
+			buildPhases = (
+				6516BA0384FE5FE3D8B3C35A0A3EE759 /* Headers */,
+				0EF14D7C274667B05D4789A010E9A138 /* Sources */,
+				84FD937B97CD4F7DF260EBAF2EDE8DF6 /* Frameworks */,
+				CC47CFC47F21D2E7FDF8A20A8066F8DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-swiftui-viper-githubapi-demo-swiftui-viper-githubapi-demoUITests";
+			productName = "Pods-swiftui-viper-githubapi-demo-swiftui-viper-githubapi-demoUITests";
+			productReference = D66FF955EAC476C03C2B9CCEDD4CA105 /* Pods_swiftui_viper_githubapi_demo_swiftui_viper_githubapi_demoUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1250;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 3BC377BDD19D53B0507E3B269654F952 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7996D4D780FF8A38ECB1C58253B87C8F /* Mockingjay */,
+				46A21D5B4F21BF2464D4FF3353BAA8DA /* Pods-swiftui-viper-githubapi-demo */,
+				BE18360879BD123BDC5896982CAC2D5A /* Pods-swiftui-viper-githubapi-demo-swiftui-viper-githubapi-demoUITests */,
+				9BC0AF9CBC39567BD00CE834286DBE1F /* Pods-swiftui-viper-githubapi-demoTests */,
+				A4ED113D38492F631BC6DBF8BB3D1D8E /* URITemplate */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2F4DB2F155024AB1CB1A6F9A233A04DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D2CB64996A3864C52487A9F729E3761 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8CEC40C1836307E378D41DD2D793E46F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC47CFC47F21D2E7FDF8A20A8066F8DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECA1E900EBD6B48245C77E23E15FDA52 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0EF14D7C274667B05D4789A010E9A138 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				948E0D58DCB1E7A5249CAA41BEFED35B /* Pods-swiftui-viper-githubapi-demo-swiftui-viper-githubapi-demoUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41674B287776F478B944F577F4BF5429 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B050AEB3B9FD2C351BABB34CF47D1B2E /* Pods-swiftui-viper-githubapi-demo-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6597C018862AF199FB52E4E1E2C0687 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FCC99235BF1F518778DB9BE71AC94FA /* URITemplate-dummy.m in Sources */,
+				DAF23FEFC6F971629B50865E09DE60E3 /* URITemplate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEFB07CF765AE0419F2318728466575D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				235EE4AEEDC616E29B3289871BE9367D /* Pods-swiftui-viper-githubapi-demoTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E83F0DEA5B4EA08D2D83AA299B83C01D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1FDEE02E9E4BDFD5F6395E9728DF2B8 /* Builders.swift in Sources */,
+				859DE98E4A3DF8CFEE3FEBEC803D2112 /* Matchers.swift in Sources */,
+				A667CEC22D1CBDD9B94BE515F77B65A4 /* Mockingjay-dummy.m in Sources */,
+				1C7E4B9154B4CCD4E2E20A7873C8ABD6 /* Mockingjay.swift in Sources */,
+				F92212F212AFD1B0BCC5D9C00D309E56 /* MockingjayProtocol.swift in Sources */,
+				7584D9E6447049E2A9FB95504DD41DF5 /* MockingjayURLSessionConfiguration.m in Sources */,
+				772865DC2D164B0FEC0EF742AD288FF3 /* NSURLSessionConfiguration.swift in Sources */,
+				601078695EAB2498B63C7F1648BFF7F3 /* XCTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A1CFF30D0B61DD88B1CADC04AD4006E5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-swiftui-viper-githubapi-demo";
+			target = 46A21D5B4F21BF2464D4FF3353BAA8DA /* Pods-swiftui-viper-githubapi-demo */;
+			targetProxy = 2DD29D479D96B2BFAF2FF695FE1399E1 /* PBXContainerItemProxy */;
+		};
+		CD9C2656AC86828652CBD3A37711DC1B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Mockingjay;
+			target = 7996D4D780FF8A38ECB1C58253B87C8F /* Mockingjay */;
+			targetProxy = B0E6D6CF314205D6774C5ACF36EB0980 /* PBXContainerItemProxy */;
+		};
+		E6ED3C48446FBBD02BF78D22729ABCBD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = URITemplate;
+			target = A4ED113D38492F631BC6DBF8BB3D1D8E /* URITemplate */;
+			targetProxy = 38CC40D72D4708722C502A885BB43E75 /* PBXContainerItemProxy */;
+		};
+		F7A34E8105895393E8C31FC109120332 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = URITemplate;
+			target = A4ED113D38492F631BC6DBF8BB3D1D8E /* URITemplate */;
+			targetProxy = F1CBD2B6F86D2A45527006D9485C4B2D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2D60E311D09FAAFD41FF99843E7EEA7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6DB7ACBF092F2F009EE8A5A64600296B /* URITemplate.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/URITemplate/URITemplate-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/URITemplate/URITemplate-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/URITemplate/URITemplate.modulemap";
+				PRODUCT_MODULE_NAME = URITemplate;
+				PRODUCT_NAME = URITemplate;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		50541827E7C5FA665A607EBD497313E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4994B62E6060718FA8E2DC9EC47E0E1C /* Pods-swiftui-viper-githubapi-demo.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-swiftui-viper-githubapi-demo/Pods-swiftui-viper-githubapi-demo-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-swiftui-viper-githubapi-demo/Pods-swiftui-viper-githubapi-demo.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		54E96B25481503262C6C422DD82B9E41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FBEA10142B5911DEF38A9208E88FDF8B /* Pods-swiftui-viper-githubapi-demo.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-swiftui-viper-githubapi-demo/Pods-swiftui-viper-githubapi-demo-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-swiftui-viper-githubapi-demo/Pods-swiftui-viper-githubapi-demo.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6AC17C40B48CA65D6BCAC3AD70BC0776 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4555937390A217C5225AAD8632FE5241 /* Mockingjay.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Mockingjay/Mockingjay-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Mockingjay/Mockingjay-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Mockingjay/Mockingjay.modulemap";
+				PRODUCT_MODULE_NAME = Mockingjay;
+				PRODUCT_NAME = Mockingjay;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		75203440206F1EE8B479929C9409F7A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE9333F43CEAD826D834C9019B9B478A /* Pods-swiftui-viper-githubapi-demoTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-swiftui-viper-githubapi-demoTests/Pods-swiftui-viper-githubapi-demoTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-swiftui-viper-githubapi-demoTests/Pods-swiftui-viper-githubapi-demoTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8E844C855E6E8F7FCAC611706AE2E41C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 37D6665D7DF945A3D33B87621BE18E40 /* Pods-swiftui-viper-githubapi-demoTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-swiftui-viper-githubapi-demoTests/Pods-swiftui-viper-githubapi-demoTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-swiftui-viper-githubapi-demoTests/Pods-swiftui-viper-githubapi-demoTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A7297A263FB23DCBD4D40A600E2A2A59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5864180ADCA91ADD7138B2B975D69CAA /* Pods-swiftui-viper-githubapi-demo-swiftui-viper-githubapi-demoUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-swiftui-viper-githubapi-demo-swiftui-viper-githubapi-demoUITests/Pods-swiftui-viper-githubapi-demo-swiftui-viper-githubapi-demoUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-swiftui-viper-githubapi-demo-swiftui-viper-githubapi-demoUITests/Pods-swiftui-viper-githubapi-demo-swiftui-viper-githubapi-demoUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BC01E0B73776AF6B58DC318A9BE988D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		BDC757C25418A12D918640B159E928EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3A9C0CC2C9D095ADB0FC972613E0617 /* Mockingjay.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Mockingjay/Mockingjay-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Mockingjay/Mockingjay-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Mockingjay/Mockingjay.modulemap";
+				PRODUCT_MODULE_NAME = Mockingjay;
+				PRODUCT_NAME = Mockingjay;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C605C363CC9F26F9FF97DBB1D5C6E25C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		DDBD19B1F08CE3CE23923E59FE848E0B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15050BC510E832CCF8D7D600EAD99DAD /* URITemplate.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/URITemplate/URITemplate-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/URITemplate/URITemplate-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/URITemplate/URITemplate.modulemap";
+				PRODUCT_MODULE_NAME = URITemplate;
+				PRODUCT_NAME = URITemplate;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F27B0F017A1742EBEE5A92CA075B60DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A25704EFC405BA8C899210390D5E3184 /* Pods-swiftui-viper-githubapi-demo-swiftui-viper-githubapi-demoUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-swiftui-viper-githubapi-demo-swiftui-viper-githubapi-demoUITests/Pods-swiftui-viper-githubapi-demo-swiftui-viper-githubapi-demoUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-swiftui-viper-githubapi-demo-swiftui-viper-githubapi-demoUITests/Pods-swiftui-viper-githubapi-demo-swiftui-viper-githubapi-demoUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4691886EF14E62105E5B02D60AC614A9 /* Build configuration list for PBXNativeTarget "Pods-swiftui-viper-githubapi-demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50541827E7C5FA665A607EBD497313E5 /* Debug */,
+				54E96B25481503262C6C422DD82B9E41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC01E0B73776AF6B58DC318A9BE988D7 /* Debug */,
+				C605C363CC9F26F9FF97DBB1D5C6E25C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6A284720825824196A740A0325B6DF2A /* Build configuration list for PBXNativeTarget "Pods-swiftui-viper-githubapi-demo-swiftui-viper-githubapi-demoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7297A263FB23DCBD4D40A600E2A2A59 /* Debug */,
+				F27B0F017A1742EBEE5A92CA075B60DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9E3454BCA1DD0F35B54C44BAF6E0754C /* Build configuration list for PBXNativeTarget "URITemplate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDBD19B1F08CE3CE23923E59FE848E0B /* Debug */,
+				2D60E311D09FAAFD41FF99843E7EEA7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C0E0251AC71A5A8449F61B35B936F125 /* Build configuration list for PBXNativeTarget "Pods-swiftui-viper-githubapi-demoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E844C855E6E8F7FCAC611706AE2E41C /* Debug */,
+				75203440206F1EE8B479929C9409F7A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F7485EA3857FD96A9FC9A05A8053C2AB /* Build configuration list for PBXNativeTarget "Mockingjay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6AC17C40B48CA65D6BCAC3AD70BC0776 /* Debug */,
+				BDC757C25418A12D918640B159E928EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

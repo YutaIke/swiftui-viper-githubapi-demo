@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E17C7B7E0B41AC252F2ADC9 /* Pods_swiftui_viper_githubapi_demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00AA08C44F02618EC1EB78E3 /* Pods_swiftui_viper_githubapi_demo.framework */; };
+		4BDA16F5A8DA9AF53D0B7DBC /* Pods_swiftui_viper_githubapi_demo_swiftui_viper_githubapi_demoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8FE402817462FCDECC2EAFF /* Pods_swiftui_viper_githubapi_demo_swiftui_viper_githubapi_demoUITests.framework */; };
+		4EBA59FA9F4F4CE649A3E7E0 /* Pods_swiftui_viper_githubapi_demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D637A8602673C6BF0059F972 /* Pods_swiftui_viper_githubapi_demo.framework */; };
 		D60BE815266A433800BAD4BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60BE814266A433800BAD4BA /* AppDelegate.swift */; };
 		D60BE817266A433800BAD4BA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60BE816266A433800BAD4BA /* SceneDelegate.swift */; };
 		D60BE819266A433800BAD4BA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60BE818266A433800BAD4BA /* ContentView.swift */; };
@@ -31,6 +34,8 @@
 		D6113203266E3C83003576D3 /* RepositoriesInteractorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6113202266E3C83003576D3 /* RepositoriesInteractorTest.swift */; };
 		D6113205266E5AFC003576D3 /* MockRepositoriesWebAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6113204266E5AFC003576D3 /* MockRepositoriesWebAPI.swift */; };
 		D6113207266E5D7A003576D3 /* MockedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6113206266E5D7A003576D3 /* MockedData.swift */; };
+		D637A8632673C6D70059F972 /* Pods_swiftui_viper_githubapi_demoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D637A8622673C6D70059F972 /* Pods_swiftui_viper_githubapi_demoTests.framework */; };
+		D65A229C2670BE7E00021C7F /* RepositoriesWebAPITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65A229B2670BE7E00021C7F /* RepositoriesWebAPITest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +56,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		00AA08C44F02618EC1EB78E3 /* Pods_swiftui_viper_githubapi_demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_swiftui_viper_githubapi_demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F196EFE99D81FDD053265B4 /* Pods_swiftui_viper_githubapi_demoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_swiftui_viper_githubapi_demoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3132D2258219A4344E04F0A0 /* Pods-swiftui-viper-githubapi-demoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swiftui-viper-githubapi-demoTests.debug.xcconfig"; path = "Target Support Files/Pods-swiftui-viper-githubapi-demoTests/Pods-swiftui-viper-githubapi-demoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4692659820BE0131548BBE9E /* Pods-swiftui-viper-githubapi-demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swiftui-viper-githubapi-demo.debug.xcconfig"; path = "Target Support Files/Pods-swiftui-viper-githubapi-demo/Pods-swiftui-viper-githubapi-demo.debug.xcconfig"; sourceTree = "<group>"; };
+		4E801D932F32ED04D1701CA2 /* Pods-swiftui-viper-githubapi-demo-swiftui-viper-githubapi-demoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swiftui-viper-githubapi-demo-swiftui-viper-githubapi-demoUITests.debug.xcconfig"; path = "Target Support Files/Pods-swiftui-viper-githubapi-demo-swiftui-viper-githubapi-demoUITests/Pods-swiftui-viper-githubapi-demo-swiftui-viper-githubapi-demoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		50AC0E4BCA777FE35AC5EEEA /* Pods-swiftui-viper-githubapi-demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swiftui-viper-githubapi-demo.release.xcconfig"; path = "Target Support Files/Pods-swiftui-viper-githubapi-demo/Pods-swiftui-viper-githubapi-demo.release.xcconfig"; sourceTree = "<group>"; };
+		98A31B659F2D05E56C49201B /* Pods-swiftui-viper-githubapi-demo-swiftui-viper-githubapi-demoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swiftui-viper-githubapi-demo-swiftui-viper-githubapi-demoUITests.release.xcconfig"; path = "Target Support Files/Pods-swiftui-viper-githubapi-demo-swiftui-viper-githubapi-demoUITests/Pods-swiftui-viper-githubapi-demo-swiftui-viper-githubapi-demoUITests.release.xcconfig"; sourceTree = "<group>"; };
 		D60BE811266A433800BAD4BA /* swiftui-viper-githubapi-demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swiftui-viper-githubapi-demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D60BE814266A433800BAD4BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D60BE816266A433800BAD4BA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -81,6 +93,12 @@
 		D6113202266E3C83003576D3 /* RepositoriesInteractorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesInteractorTest.swift; sourceTree = "<group>"; };
 		D6113204266E5AFC003576D3 /* MockRepositoriesWebAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockRepositoriesWebAPI.swift; sourceTree = "<group>"; };
 		D6113206266E5D7A003576D3 /* MockedData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockedData.swift; sourceTree = "<group>"; };
+		D637A85E2673C5FC0059F972 /* Mockingjay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Mockingjay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D637A8602673C6BF0059F972 /* Pods_swiftui_viper_githubapi_demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_swiftui_viper_githubapi_demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D637A8622673C6D70059F972 /* Pods_swiftui_viper_githubapi_demoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_swiftui_viper_githubapi_demoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D65A229B2670BE7E00021C7F /* RepositoriesWebAPITest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesWebAPITest.swift; sourceTree = "<group>"; };
+		E61DE7761617737E82EC7475 /* Pods-swiftui-viper-githubapi-demoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swiftui-viper-githubapi-demoTests.release.xcconfig"; path = "Target Support Files/Pods-swiftui-viper-githubapi-demoTests/Pods-swiftui-viper-githubapi-demoTests.release.xcconfig"; sourceTree = "<group>"; };
+		F8FE402817462FCDECC2EAFF /* Pods_swiftui_viper_githubapi_demo_swiftui_viper_githubapi_demoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_swiftui_viper_githubapi_demo_swiftui_viper_githubapi_demoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +106,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E17C7B7E0B41AC252F2ADC9 /* Pods_swiftui_viper_githubapi_demo.framework in Frameworks */,
+				4EBA59FA9F4F4CE649A3E7E0 /* Pods_swiftui_viper_githubapi_demo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,6 +115,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D637A8632673C6D70059F972 /* Pods_swiftui_viper_githubapi_demoTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,12 +123,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BDA16F5A8DA9AF53D0B7DBC /* Pods_swiftui_viper_githubapi_demo_swiftui_viper_githubapi_demoUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7AB01548C4F5D3F411EDAEF5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4692659820BE0131548BBE9E /* Pods-swiftui-viper-githubapi-demo.debug.xcconfig */,
+				50AC0E4BCA777FE35AC5EEEA /* Pods-swiftui-viper-githubapi-demo.release.xcconfig */,
+				4E801D932F32ED04D1701CA2 /* Pods-swiftui-viper-githubapi-demo-swiftui-viper-githubapi-demoUITests.debug.xcconfig */,
+				98A31B659F2D05E56C49201B /* Pods-swiftui-viper-githubapi-demo-swiftui-viper-githubapi-demoUITests.release.xcconfig */,
+				3132D2258219A4344E04F0A0 /* Pods-swiftui-viper-githubapi-demoTests.debug.xcconfig */,
+				E61DE7761617737E82EC7475 /* Pods-swiftui-viper-githubapi-demoTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		D60BE808266A433800BAD4BA = {
 			isa = PBXGroup;
 			children = (
@@ -115,6 +150,8 @@
 				D60BE82D266A433C00BAD4BA /* swiftui-viper-githubapi-demoTests */,
 				D60BE838266A433C00BAD4BA /* swiftui-viper-githubapi-demoUITests */,
 				D60BE812266A433800BAD4BA /* Products */,
+				7AB01548C4F5D3F411EDAEF5 /* Pods */,
+				DC0969D50D4C7DE4D81A862B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -131,6 +168,7 @@
 		D60BE813266A433800BAD4BA /* swiftui-viper-githubapi-demo */ = {
 			isa = PBXGroup;
 			children = (
+				D65A22992670BE2200021C7F /* Repositories */,
 				D60BE857266A800600BAD4BA /* Injected */,
 				D60BE853266A55C400BAD4BA /* System */,
 				D60BE84E266A4F8400BAD4BA /* Utilities */,
@@ -144,7 +182,6 @@
 				D60BE825266A433B00BAD4BA /* Info.plist */,
 				D60BE81A266A433800BAD4BA /* swiftui_viper_githubapi_demo.xcdatamodeld */,
 				D60BE81F266A433B00BAD4BA /* Preview Content */,
-				D60BE860266A88EE00BAD4BA /* RepositoriesWebAPI.swift */,
 			);
 			path = "swiftui-viper-githubapi-demo";
 			sourceTree = "<group>";
@@ -160,6 +197,7 @@
 		D60BE82D266A433C00BAD4BA /* swiftui-viper-githubapi-demoTests */ = {
 			isa = PBXGroup;
 			children = (
+				D65A229A2670BE2F00021C7F /* Repositories */,
 				D61131FE266E0E8F003576D3 /* Mocks */,
 				D6113201266E3C59003576D3 /* Ineractors */,
 				D61131FB266E06F1003576D3 /* Presenters */,
@@ -288,6 +326,35 @@
 			path = Ineractors;
 			sourceTree = "<group>";
 		};
+		D65A22992670BE2200021C7F /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				D60BE860266A88EE00BAD4BA /* RepositoriesWebAPI.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		D65A229A2670BE2F00021C7F /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				D65A229B2670BE7E00021C7F /* RepositoriesWebAPITest.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		DC0969D50D4C7DE4D81A862B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D637A8622673C6D70059F972 /* Pods_swiftui_viper_githubapi_demoTests.framework */,
+				D637A8602673C6BF0059F972 /* Pods_swiftui_viper_githubapi_demo.framework */,
+				D637A85E2673C5FC0059F972 /* Mockingjay.framework */,
+				00AA08C44F02618EC1EB78E3 /* Pods_swiftui_viper_githubapi_demo.framework */,
+				F8FE402817462FCDECC2EAFF /* Pods_swiftui_viper_githubapi_demo_swiftui_viper_githubapi_demoUITests.framework */,
+				0F196EFE99D81FDD053265B4 /* Pods_swiftui_viper_githubapi_demoTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -295,6 +362,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D60BE83E266A433C00BAD4BA /* Build configuration list for PBXNativeTarget "swiftui-viper-githubapi-demo" */;
 			buildPhases = (
+				16005C190633FCBD60ACA517 /* [CP] Check Pods Manifest.lock */,
 				D60BE80D266A433800BAD4BA /* Sources */,
 				D60BE80E266A433800BAD4BA /* Frameworks */,
 				D60BE80F266A433800BAD4BA /* Resources */,
@@ -312,9 +380,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D60BE841266A433C00BAD4BA /* Build configuration list for PBXNativeTarget "swiftui-viper-githubapi-demoTests" */;
 			buildPhases = (
+				23B660466963488D2971C240 /* [CP] Check Pods Manifest.lock */,
 				D60BE826266A433C00BAD4BA /* Sources */,
 				D60BE827266A433C00BAD4BA /* Frameworks */,
 				D60BE828266A433C00BAD4BA /* Resources */,
+				F9A355BA0C69C59CA4DB1FEF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -330,6 +400,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D60BE844266A433C00BAD4BA /* Build configuration list for PBXNativeTarget "swiftui-viper-githubapi-demoUITests" */;
 			buildPhases = (
+				D50072250D59CE2A09278C14 /* [CP] Check Pods Manifest.lock */,
 				D60BE831266A433C00BAD4BA /* Sources */,
 				D60BE832266A433C00BAD4BA /* Frameworks */,
 				D60BE833266A433C00BAD4BA /* Resources */,
@@ -413,6 +484,92 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		16005C190633FCBD60ACA517 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-swiftui-viper-githubapi-demo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		23B660466963488D2971C240 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-swiftui-viper-githubapi-demoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D50072250D59CE2A09278C14 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-swiftui-viper-githubapi-demo-swiftui-viper-githubapi-demoUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F9A355BA0C69C59CA4DB1FEF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-swiftui-viper-githubapi-demoTests/Pods-swiftui-viper-githubapi-demoTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-swiftui-viper-githubapi-demoTests/Pods-swiftui-viper-githubapi-demoTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-swiftui-viper-githubapi-demoTests/Pods-swiftui-viper-githubapi-demoTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D60BE80D266A433800BAD4BA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -445,6 +602,7 @@
 				D6113205266E5AFC003576D3 /* MockRepositoriesWebAPI.swift in Sources */,
 				D60BE82F266A433C00BAD4BA /* swiftui_viper_githubapi_demoTests.swift in Sources */,
 				D6113200266E0EA1003576D3 /* MockRepositoriesInteractor.swift in Sources */,
+				D65A229C2670BE7E00021C7F /* RepositoriesWebAPITest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -601,6 +759,7 @@
 		};
 		D60BE83F266A433C00BAD4BA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4692659820BE0131548BBE9E /* Pods-swiftui-viper-githubapi-demo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -622,6 +781,7 @@
 		};
 		D60BE840266A433C00BAD4BA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 50AC0E4BCA777FE35AC5EEEA /* Pods-swiftui-viper-githubapi-demo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -643,6 +803,7 @@
 		};
 		D60BE842266A433C00BAD4BA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3132D2258219A4344E04F0A0 /* Pods-swiftui-viper-githubapi-demoTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -665,6 +826,7 @@
 		};
 		D60BE843266A433C00BAD4BA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E61DE7761617737E82EC7475 /* Pods-swiftui-viper-githubapi-demoTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -687,6 +849,7 @@
 		};
 		D60BE845266A433C00BAD4BA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E801D932F32ED04D1701CA2 /* Pods-swiftui-viper-githubapi-demo-swiftui-viper-githubapi-demoUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -707,6 +870,7 @@
 		};
 		D60BE846266A433C00BAD4BA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98A31B659F2D05E56C49201B /* Pods-swiftui-viper-githubapi-demo-swiftui-viper-githubapi-demoUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

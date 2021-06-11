@@ -1,0 +1,6 @@
+framework module Pods_swiftui_viper_githubapi_demoTests {
+  umbrella header "Pods-swiftui-viper-githubapi-demoTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

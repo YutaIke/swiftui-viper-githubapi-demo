@@ -26,7 +26,7 @@ struct RealRepositoriesWebAPI: RepositoriesWebAPI {
     func loadRepositories(query: String? = nil) -> AnyPublisher<RepositoriesResponse, APIError> {
         let api = RealRepositoriesWebAPI.API.searchRepositories
         let queryItems:[URLQueryItem] = [.init(name: "q", value: query),
-                                         .init(name: "order", value: "desc")]
+                                         .init(name: "sort", value: "stars")]
 
         do {
             let request = try api.urlRequest(baseUrl: baseURL, queryItems: queryItems)
@@ -39,7 +39,7 @@ struct RealRepositoriesWebAPI: RepositoriesWebAPI {
                 .mapError { _ in APIError.unexpectedResponse }
                 .decode(type: RepositoriesResponse.self, decoder: decorder)
                 .mapError({ (error) -> APIError in
-                    APIError.unexpectedResponse
+                    APIError.decodeError
                 })
                 .receive(on: RunLoop.main)
                 .eraseToAnyPublisher()
